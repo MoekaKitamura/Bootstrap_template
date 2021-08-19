@@ -1,0 +1,24 @@
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">Welcome To Our Studio!</div>
+        <div class="masthead-heading text-uppercase">detail</div>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+    </div>
+</header>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Detail</h1>
+
+<p>
+  <strong>Title:</strong>
+  <%= @blog.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @blog.content %>
+</p>
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>
